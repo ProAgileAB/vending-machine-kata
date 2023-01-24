@@ -4,3 +4,8 @@ exports[`Vending Machine > foo 1`] = `
 "VendingMachine
 "
 `;
+
+exports[`Vending Machine > initial state 1`] = `
+"VendingMachine
+"
+`;

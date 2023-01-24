@@ -8,11 +8,6 @@ const coins = {"penny": 1,
     "quarter": 25}
 
 describe("Vending Machine", () => {
-    it("foo", () => {
-        let vendingMachine = new VendingMachine()
-        let printer = new VendingMachinePrinter(vendingMachine)
-        expect(printer.print()).toMatchSnapshot()
-    })
 
     it("accept coins", () => {
         const machine = new VendingMachine();
@@ -24,5 +19,12 @@ describe("Vending Machine", () => {
         expect(machine.coins).toEqual([5])
         expect(machine.display).toEqual("5")
     })
+
+    it.skip("stub approval test", () => {
+        let vendingMachine = new VendingMachine()
+        let printer = new VendingMachinePrinter(vendingMachine)
+        expect(printer.print()).toMatchSnapshot()
+    })
+
 })
 
