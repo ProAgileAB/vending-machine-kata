@@ -11,6 +11,9 @@ const coins = {
 
 describe("Vending Machine", () => {
 
+    // Task: rewrite the assert based tests to approval (snapshot) based tests!
+    // Hint: you will have to extend the VendingMachinePrinter while doing this.
+
     it("accept coins", () => {
         const machine = new VendingMachine();
         expect(machine.display === "INSERT COIN")
@@ -22,7 +25,7 @@ describe("Vending Machine", () => {
         expect(machine.display).toEqual("5")
     })
 
-    it.skip("stub approval test", () => {
+    it("inserting one nickel", () => {
         let vendingMachine = new VendingMachine()
         let printer = new VendingMachinePrinter(vendingMachine)
         expect(printer.print()).toMatchSnapshot()

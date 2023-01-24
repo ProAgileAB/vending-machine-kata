@@ -5,13 +5,13 @@ class VendingMachinePrinter {
     machine: VendingMachine;
 
     constructor(machine: VendingMachine) {
-        this.columns = 60
+        this.columns = 40
         this.machine = machine
     }
 
     print() {
         let text = "VendingMachine\n"
-        // TODO: finish this
+        text += this.format_line_with_whitespace('Display', this.machine.display)
         return text
     }
 
