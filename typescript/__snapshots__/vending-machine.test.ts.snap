@@ -1,0 +1,6 @@
+// Vitest Snapshot v1
+
+exports[`Vending Machine > foo 1`] = `
+"VendingMachine
+"
+`;
