@@ -2,10 +2,12 @@ import {describe, it, expect} from 'vitest'
 import VendingMachine from "./vending-machine";
 import VendingMachinePrinter from "./vending-machine-printer";
 
-const coins = {"penny": 1,
+const coins = {
+    "penny": 1,
     "nickel": 5,
     "dime": 10,
-    "quarter": 25}
+    "quarter": 25
+}
 
 describe("Vending Machine", () => {
 
