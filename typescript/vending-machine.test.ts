@@ -11,14 +11,6 @@ enum Coin {
 
 describe("Vending Machine assert tests version", () => {
 
-    // Hello there!
-    // 1. One of the unit tests are failing because of a bug. Fix the bug.
-    // 2. Add one approval test for each unit test, rewriting them to approval style.
-    //    The PRINTER in VendingMachinePrinter is incomplete, so you will have to extend
-    //    it.
-    // 3. How readable can you make the text representation of the VendingMachine state?
-    //    Try to really improve the print-out from the PRINTER making is super clear!
-
     it("initial state", () => {
         const machine = new VendingMachine();
         expect(machine.balance).toEqual(0)
@@ -28,8 +20,6 @@ describe("Vending Machine assert tests version", () => {
 
     it("inserting one nickel", () => {
         const machine = new VendingMachine();
-        expect(machine.display === "INSERT COIN")
-
         machine.insert_coin(Coin.Nickel)
 
         expect(machine.balance).toEqual(5)
